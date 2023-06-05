@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+$breakpoints: (
+  'smallphone':600px,
+  'phone': 768px,
+  'tablet': 1024px,
+  'desktop': 1920px,
+) ;
+// @import '../../node_modules/include-media/dist/include-media';
+@import '../../../node_modules/include-media/dist/include-media';
+
+
+a{
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+
+
+html {
+  // @extend %cover;
+   font-size: calc(100vw / 1920*10);
+   line-height: 1;
+   height: 100%;
+   //overflow: hidden;
+  // position: fixed;
+
+  @include media('<=tablet') {
+    font-size: calc(100vw / 1024 * 10);
+    // background-color: red;
+  }
+
+  @include media('<=phone') {
+    font-size: calc(100vw / 768 * 10);
+    // background-color: blue;
+  }
+
+
+}
+body{
+  // @extend %cover;
+  // position: fixed;
+  height: 100%;
+}
+
+
+.container{
+  // @extend %cover;
+  height: 100%;
+  width: 100%;
+ 
+}

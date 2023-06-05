@@ -1,0 +1,47 @@
+.header{ 
+   
+    // height: 99.5vh;
+    // height: 99.5svh;
+    height: 100%;
+    overflow: hidden;
+
+    &__title{
+        position: relative;
+        top: 5rem;
+    }
+    &__title--main{
+        font-size: 12rem;
+        text-align: center;
+    }
+
+    &__title--sub{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    &__sub{
+        font-size: 12rem;
+       
+    }
+    &__subtitle{
+        font-size: 2rem;
+       
+        align-self: self-end;
+        margin: 1.5rem;
+        line-height: 1.2;
+    }
+  &__media{
+    height: 100%;
+    margin-top: -13rem;
+    background-image:linear-gradient(rgba(#fff, .9) 10%, rgba(#fff, .9) 30%, transparent 50%),url(http://localhost:3000/f1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-image:url(http://localhost:3000/f1.jpeg);
+    background-size: cover;
+    
+//   background-attachment: fixed;
+
+  }
+
+}

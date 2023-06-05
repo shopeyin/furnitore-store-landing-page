@@ -1,0 +1,14 @@
+
+.navigation{
+    font-size: 3rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    border-bottom: 1px solid black;
+  
+}
+.navigation__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
